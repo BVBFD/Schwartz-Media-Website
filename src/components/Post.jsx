@@ -1,3 +1,5 @@
+import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -39,6 +41,13 @@ const Post = ({ postObj }) => {
         <img src={postObj.homePostImg} alt='' />
         <span>{postObj.title}</span>
         <p>{postObj.text}</p>
+        <div>
+          <a>Read More</a>
+          <a>
+            <FontAwesomeIcon icon={faArrowAltCircleRight} />
+            <span>Subscribe</span>
+          </a>
+        </div>
       </div>
     </PostBox>
   );
