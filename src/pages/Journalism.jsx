@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import Header from './Header';
 import styled from 'styled-components';
+import Header from '../components/Header.jsx';
+import Posts from '../components/Posts.jsx';
 
 const JournalismBox = styled.div``;
 
@@ -37,6 +38,7 @@ const IntroHeader = styled.div`
     justify-content: center;
     align-items: center;
     height: 20%;
+    margin-bottom: -3rem;
     padding: 0 4rem 0 4rem;
     font-size: 3rem;
   }
@@ -87,6 +89,7 @@ const Journalism = (props) => {
           </p>
         </div>
       </IntroHeader>
+      <Posts />
     </JournalismBox>
   );
 };

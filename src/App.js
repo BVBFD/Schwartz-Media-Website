@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import styled, { keyframes } from 'styled-components';
 import { Route, Routes } from 'react-router-dom';
-import Journalism from './components/Journalism';
+import Journalism from './pages/Journalism';
 
 const App = (props) => {
   return (
