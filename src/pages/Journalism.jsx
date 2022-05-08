@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import BottomBar from '../components/BottomBar.jsx';
 import Header from '../components/Header.jsx';
 import Posts from '../components/Posts.jsx';
 
@@ -90,6 +91,7 @@ const Journalism = (props) => {
         </div>
       </IntroHeader>
       <Posts />
+      <BottomBar />
     </JournalismBox>
   );
 };
